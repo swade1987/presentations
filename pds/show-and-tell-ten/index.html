@@ -52,44 +52,51 @@
 				<section style="text-align: left;">
 					<h2>Today's Agenda</h2>
 						<p>1. Sprint Goal</p>
-						<p>2. Why Docker?</p>
+						<p>2. How have we secured things?</p>
 						<p>3. How does it all fit together?</p>
-						<p>4. From CDP to MVP</p>
-						<p>5. James "eureka" moment</p>
+						<p>5. Demo</p>
 						<p>6. Next sprint</p>
 						<p>7. Feedback</p>
 				</section>
 
 				<section>
-					<h2>Spoiler ...</h2>
-					<p>This presentation is running in a Docker container!</p>
-				</section>
-
-				<section>
-					<h2>Any questions?</h2>
-					<p>Shout them out as we go. That's more fun.</p>
-				</section>
-
-				<section>
 					<h2>Sprint goal ...</h2>
-					<p>Just get that Rails app deployed to AWS please :)</p>
-					<br><br><br>
-					<p><a href="https://github.com/ukpds/search-for-member" target="_blank">https://github.com/ukpds/search-for-member</a></p>
+					<p>Just secure the ___ out of what we have already!</p>
 				</section>
 
-				<!--Why Docker slides-->
-				<section>
-					<h2>So why was Docker chosen?</h2>
+				<section id="fragments-1">
+					<h2>How have we secured things?</h2>
+					<p class="fragment" data-fragment-index="0">Introduced a Bastion Host for each environment</p>
+					<p class="fragment" data-fragment-index="1">Introduced a VPN for each environment</p>
+					<p class="fragment" data-fragment-index="2">All servers in the private subnet</p>
 				</section>
+
 				<section>
-					<h2>It's open source and free!</h2>
+					<h2>How does the bastion host work?</h2>
 				</section>
+				<section id="fragments-2">
+					<p class="fragment" data-fragment-index="0">Instance accessible only from our IP address</p>
+					<p class="fragment" data-fragment-index="1">From our ip address we SSH into this instance</p>
+					<p class="fragment" data-fragment-index="2">We can now SSH into all instances in the private subnet</p>
+					<br>
+					<p class="fragment" data-fragment-index="3">Note: The instances have a different key to the bastion</p>
+					<br>
+					<p class="fragment" data-fragment-index="4"><a href="https://twitter.com/search?src=typd&q=%23ukparlicdp" target="_blank">#secure</a></p>
+				</section>
+
 				<section>
-					<h2>Code runs locally in the same environment as Production</h2>
+					<h2>How does the VPN work?</h2>
 				</section>
-				<section>
-					<h2>Build once & run anywhere</h2>
+				<section id="fragments-3">
+					<p class="fragment" data-fragment-index="0">Instance accessible only from our IP address</p>
+					<p class="fragment" data-fragment-index="1">From our ip address we connect our VPN client</p>
+					<p class="fragment" data-fragment-index="2">We can now browse to the private domains within that environment</p>
+					<br>
+					<p class="fragment" data-fragment-index="3"><a href="https://twitter.com/search?src=typd&q=%23ukparlicdp" target="_blank">#secure</a></p>
 				</section>
+
+
+
 				<section>
 					<h2>Immutablility</h2>
 					<p>No pets, no cattle, just loads of chickens</p>
