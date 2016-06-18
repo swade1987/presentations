@@ -12,7 +12,4 @@ $ docker run -p 8000:8000 --name "example-presentation" -v $(pwd)/example-presen
 
 ## View the presentation
 
-View the on-line presentation:
-
-- http://127.0.0.1:8000/slide-deck#/
-- http://BOOT2DOCKER-IP:8000/slide-deck, OS X users should replace `BOOT2DOCKER-IP` with `$(boot2docker ip)`
+Browse to http://localhost:8000/slide-deck#/
