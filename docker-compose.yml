@@ -1,0 +1,21 @@
+version: '2'
+services:
+  traefik:
+    image: traefik
+    command: --web --docker --docker.domain=docker.localhost --logLevel=DEBUG
+    ports:
+      - "80:80"
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /dev/null:/traefik.toml
+
+  docker_101:
+    build: .
+    volumes:
+       - ./pds/docker-101:/opt/reveal.js/slide-deck
+    ports:
+      - "8000"
+    labels:
+      - "traefik.backend=docker-101"
+      - "traefik.frontend.rule=Host:docker101.docker.localhost"
