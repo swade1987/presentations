@@ -28,7 +28,3 @@ $ docker-compose up -d
 ```
 
 Now browse to http://docker101.docker.localhost/slide-deck
-
-## TODO List
-
-Add a Makefile to make things easier
