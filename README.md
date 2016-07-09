@@ -23,8 +23,11 @@ $ *.docker.localhost localhost
 Execute the following commands:
 
 ```bash
-$ docker build -t="swade1987/presentation" .
-$ docker-compose up -d
+$ make run
 ```
 
-Now browse to http://docker101.docker.localhost/slide-deck
+Now browse any of the following URLs:
+
+http://docker101.docker.localhost/slide-deck
+http://showandtelltwelve.docker.localhost/slide-deck
+http://hashicorpusergroup4.docker.localhost/slide-deck
