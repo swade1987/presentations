@@ -28,6 +28,6 @@ $ make run
 
 Now browse any of the following URLs:
 
-http://docker101.docker.localhost/slide-deck
-http://showandtelltwelve.docker.localhost/slide-deck
-http://hashicorpusergroup4.docker.localhost/slide-deck
+* http://docker101.docker.localhost/slide-deck
+* http://showandtelltwelve.docker.localhost/slide-deck
+* http://hashicorpusergroup4.docker.localhost/slide-deck
