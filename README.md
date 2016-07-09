@@ -4,8 +4,8 @@ A repository for all my reveal.js presentations.
 
 ## Installation
 
-Install Docker for Mac from here - https://docs.docker.com/docker-for-mac/
-Install Docker for Windows from here - https://docs.docker.com/docker-for-windows/
+* Install Docker for Mac from here - https://docs.docker.com/docker-for-mac/
+* Install Docker for Windows from here - https://docs.docker.com/docker-for-windows/
 
 ## Setup
 
