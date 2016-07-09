@@ -19,3 +19,23 @@ services:
     labels:
       - "traefik.backend=docker-101"
       - "traefik.frontend.rule=Host:docker101.docker.localhost"
+
+  show_and_tell_12:
+    build: .
+    volumes:
+       - ./pds/show-and-tell-twelve:/opt/reveal.js/slide-deck
+    ports:
+      - "8000"
+    labels:
+      - "traefik.backend=show-and-tell-twelve"
+      - "traefik.frontend.rule=Host:showandtelltwelve.docker.localhost"
+
+  hashicorp_usergroup_4:
+    build: .
+    volumes:
+       - ./meetups/hashicorp-user-group-4:/opt/reveal.js/slide-deck
+    ports:
+      - "8000"
+    labels:
+      - "traefik.backend=hashicorp-user-group-4"
+      - "traefik.frontend.rule=Host:hashicorpusergroup4.docker.localhost"
