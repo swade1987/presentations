@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="../css/reveal.css">
-		<link rel="stylesheet" href="../css/theme/sky.css" id="theme">
+		<link rel="stylesheet" href="../css/theme/black.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="../lib/css/zenburn.css">
@@ -45,14 +45,15 @@
 				<section>
 					<h3>Docker 101</h3>
 					<h3>By Steven Wade</h3>
+					<h3>#pdsdocker101</h3>
 				</section>
 
 				<section style="text-align: left;">
 					<h2>Today's Agenda</h2>
 					<p>1. A little bit about me</p>
-                    <p>2. Lets set the scene</p>
-					<p>3. What is Docker?</p>
-                    <p>4. Why all the hype?</p>
+                    <p>2. Whom is Docker for?</p>
+					<p>3. What is the current problem?</p>
+                    <p>4. Whats a container?</p>
 					<p>5. How can PDS benefit from it?</p>
                     <p>6. Demo</p>
                     <p>7. Questions (expecting lots)</p>
@@ -64,6 +65,13 @@
 
 				<section>
 					<h2>Who am I?</h2>
+                </section>
+
+				<section id="fragments-1" style="text-align: left;">
+					<p class="fragment" data-fragment-index="0">Twitter: @swade1987 (expecting some tweets)</p>
+					<p class="fragment" data-fragment-index="1">Email: wades@parliment.uk</p>
+					<p class="fragment" data-fragment-index="2">GitHub: <a href="https://github.com/swade1987">https://github.com/swade1987</a></p>
+					<p class="fragment" data-fragment-index="3">Conference Talker: WinOps 2016 (Culture Panel)</p>
                 </section>
 
 				<section>
@@ -110,7 +118,35 @@
                 </section>
 
 				<section>
-					<h2>Where does docker fit in?</h2>
+					<h2>Who is Docker for?</h2>
+				</section>
+
+				<section id="fragments-2">
+					<p class="fragment" data-fragment-index="0">Developers</p>
+					<p class="fragment" data-fragment-index="1">Operations</p>
+					<p class="fragment" data-fragment-index="2">CTO, CIO, CFO</p>
+					<p class="fragment" data-fragment-index="3">Basically everyone</p>
+				</section>
+
+				<section>
+					<h2>What is the current problem?</h2>
+				</section>
+
+				<section data-background="#dddddd">
+					<img src="img/the-matrix-from-hell.png" alt="matrix"/>
+				</section>
+
+				<section>
+					<h2>So what is the solution?</h2>
+				</section>
+
+				<section>
+					<img src="img/shipping-container.png" alt="shipping container"/>
+					<p>Put things inside containers</p>
+				</section>
+
+				<section>
+					<h2>So what is Docker?</h2>
                 </section>
 
 				<section>
@@ -118,21 +154,41 @@
                 </section>
 
 				<section>
-					<img src="img/lego.png" alt="praying hands"/>
+					<img src="img/lego.png" alt="lego"/>
                 </section>
+
+				<section>
+					<h2>How does it help?</h2>
+				</section>
+
+				<section data-background="#dddddd">
+					<img src="img/eliminates-matrix-from-hell.png" alt="no more matrix from hell"/>
+				</section>
 
 				<section>
 					<h2>Why should you be excited?</h2>
                 </section>
 
-				 <section id="fragments-1" style="text-align: left;">
-					<p class="fragment" data-fragment-index="0">Open Source DevOps platform</p>
-					<p class="fragment" data-fragment-index="1">It's free to use</p>
-					<p class="fragment" data-fragment-index="2">Empowers developers to build and package services/applications</p>
-					<p class="fragment" data-fragment-index="3">Containers are a standard format</p>
-					<p class="fragment" data-fragment-index="4">Easy to deploy between environments</p>
-					<p class="fragment" data-fragment-index="5">Increased resource utilisation</p>
-					<p class="fragment" data-fragment-index="6">Portability freedom</p>
+				<section>
+					<h2>Seperation of Dev and Ops concerns!</h2>
+                </section>
+
+				<section style="text-align: left;">
+					<h2>Dave the developer</h2>
+					<br>
+					<p>I just worry about the contents of the container<p>
+					<p>My code</p>
+					<p>The libraries my app needs</p>
+					<p>The application I am building</p>
+                </section>
+
+				<section style="text-align: left;">
+					<h2>Oliver the Ops guy</h2>
+					<br>
+					<p>I just worry about everything outside of the container<p>
+					<p>Logging</p>
+					<p>Monitoring</p>
+					<p>Network configuration</p>
                 </section>
 
 				<section>
@@ -142,6 +198,15 @@
 				<section>
   					<h2>Demo time ...</h2>
   					<img src="img/praying-hands.png" alt="praying hands"/>
+ 				</section>
+
+				 <section style="text-align: left;">
+  					<h2>Finally</h2>
+  					<p>I am speaking on Tuesday 26th July<p>
+					<p>HashiCorp Meetup #4</p>
+					<p>How I Packer'd my bags and moved to HashiCorp</p>
+					<br><br>
+					<p>Would love to see you there</p>
  				</section>
 
 				<section>
