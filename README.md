@@ -1,14 +1,34 @@
 # Presentations
 
-This is a repository to store all my reveal.js presentations allowing them to be ran in a Docker container locally.
+A repository for all my reveal.js presentations.
 
-## Example usage
+## Installation
+
+Install Docker for Mac from here - https://docs.docker.com/docker-for-mac/
+Install Docker for Windows from here - https://docs.docker.com/docker-for-windows/
+
+## Setup
+
+Edit your host file and add the following line
+
+| O.S           | Location                                  |
+| ------------- |:-----------------------------------------:|
+| OSX           | /etc/host                                 |
+| Windows       | C:\Windows\System32\drivers\etc\hosts     |
+
+```bash
+$ *.docker.localhost localhost
+```
+
+Execute the following commands:
 
 ```bash
 $ docker build -t="swade1987/presentation" .
-$ docker run -p 8000:8000 --name example-presentation -v $(pwd)/example-presentation:/opt/reveal.js/slide-deck -d "swade1987/presentation"
+$ docker-compose up -d
 ```
 
-## View the presentation
+Now browse to http://docker101.docker.localhost/slide-deck
 
-Browse to http://localhost:8000/slide-deck#/
+## TODO List
+
+Add a Makefile to make things easier
